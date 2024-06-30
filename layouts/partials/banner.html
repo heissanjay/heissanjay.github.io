@@ -1,0 +1,56 @@
+<div class="mx-auto pt-16 text-xl items-center justify-center text-center max-w-3xl grid grid-cols-1 grid-rows-2 max-sm:block">
+    <div class="flex mx-auto text-center items-center justify-center max-md:p-4">
+        <div class="banner-arc bg-secondary-blue">
+            {{ $pfp := resources.Get "pfp.jpg" }}
+            <img src="{{ $pfp.Permalink }}" alt="cool-cat-pfp" class="banner-pfp" />
+        </div>
+        <div class="ico-wrapper">
+            {{ $telegram := resources.Get "icons/icons8-telegram-100.png" }}
+            <div class="ico">
+                <a href="https://t.me/mrh3art">
+                    <img src="{{ $telegram.Permalink }}" alt="telegram" />
+                </a>
+            </div>
+            {{ $github := resources.Get "icons/icons8-github-100.png" }}
+            <div class="ico">
+                <a href="https://github.com/heissanjay">
+                    <img src="{{ $github.Permalink }}" alt="github" />
+                </a>
+            </div>
+            {{ $linkedin := resources.Get "icons/icons8-linkedin-512.png" }}
+            <div class="ico">
+                <a href="https://linkedin.com/in/heissanjay">
+                    <img src="{{ $linkedin.Permalink }}" alt="linkedin" />
+                </a>
+            </div>
+            {{ $twitter := resources.Get "icons/icons8-twitter-circled-612.png" }}
+            <div class="ico">
+                <a href="https://x.com/heissanjay">
+                    <img src="{{ $twitter.Permalink }}" alt="x.com / twitter" />
+                </a>
+            </div>
+            {{ $leetcode := resources.Get "icons/icons8-leetcode.png" }}
+            <div class="ico">
+                <a href="https://leetcode.com/heissanjay">
+                    <img src="{{ $leetcode.Permalink }}" alt="Leetcode" />
+                </a>
+            </div>
+            {{ $gitlab := resources.Get "icons/icons8-gitlab-100.png" }}
+            <div class="ico">
+                <a href="https://gitlab.com/heissanjay">
+                    <img src="{{ $gitlab.Permalink }}" alt="gitlab" />
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="min-w-[100px] col-span-2 p-4 m-4 row-span-1 min-h-[100px] max-md:m-2">
+        <p class="text-left text-slate-200 font-light leading-12 prose-neutral prose-xl max-md:p-4 max-md:m-0">
+            {{ with .Site.Params.bannerText }}
+            {{ .greetings | safeHTML }} <br>
+            {{ .introduction | safeHTML }} <br>
+            {{ .description | safeHTML }}
+          {{ end }}
+        </p>
+    </div>
+</div>

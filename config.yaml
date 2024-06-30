@@ -1,0 +1,29 @@
+baseURL: "http://localhost"
+title: "heissanjay"
+
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "blog"
+      name: "Blog"
+      url: "/blog"
+      weight: 2
+    - identifier: "about"
+      name: "About"
+      url: "/about"
+      weight: 3
+    - identifier: "contact"
+      name: "Contact"
+      url: "/contact"
+      weight: 4
+
+params:
+  bannerText:
+    greetings: "Hey There👋, வணக்கம் (Vanakkam). "
+    introduction: "This is Sanjay, mostly I prefer \"heissanjay\" as my username on the internet."
+    description: >  
+      I'm a CS Grad and a Software Engineer. I do coding stuff for fun, enjoy listening to music,
+      watching web series, and anime.

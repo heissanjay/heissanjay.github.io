@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: "Mukta", sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #020E26;
+}
+
+.banner-arc {
+    width: 160px ;
+    height: 320px;
+    border-top-left-radius: 160px;
+    border-bottom-left-radius: 160px;
+    background: #80FF8C;
+}
+
+.banner-pfp {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 250px;
+    margin: 35px;
+    border: 20px solid #111111;
+    object-fit: cover;
+}
+ 
+.ico {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    position: relative;
+    border-radius: 50%;
+    transition: transform 0.1s ease-in-out;
+}
+
+.ico:hover {
+    transform: translateY(-10px);
+}
+
+.ico:nth-child(1) {
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.ico:nth-child(2) {
+    margin-left:80px;
+    margin-top: -10px;
+}
+.ico:nth-child(3) {
+    margin-top: 20px;
+    margin-left:110px;
+}
+.ico:nth-child(4) {
+    margin-left: 110px;
+    margin-top: 20px;  
+}
+
+.ico:nth-child(5) {
+    margin-left: 80px;
+    margin-top: 20px;
+    padding: 4px;
+}
+.ico:nth-child(6) {
+    margin-left: 10px;
+    margin-top: -20px;  
+    padding: 4px;
+}
+
+@keyframes spin-once {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .banner-pfp {
+    animation: spin-once 0.5s linear; 
+    animation-fill-mode: forwards; 
+  }

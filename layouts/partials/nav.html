@@ -1,0 +1,67 @@
+<nav class="text-xl fixed sticky top-0 m-12 p-4 max-lg:m-4">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <div class="text-2xl font-bold">
+            <a class="" href="{{ .Site.BaseURL }}">
+                {{ .Site.Title }}
+            </a>
+        </div>
+        <div class="lg:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+                <svg id="hamburger-icon" class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"/>
+                </svg>
+                <svg id="close-icon" class="h-6 w-6 fill-current hidden" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.293 6.293a1 1 0 011.414 0L12 10.586l4.293-4.293a1 1 0 011.414 1.414L13.414 12l4.293 4.293a1 1 0 01-1.414 1.414L12 13.414l-4.293 4.293a1 1 0 01-1.414-1.414L10.586 12 6.293 7.707a1 1 0 010-1.414z"/>
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="hidden w-full lg:flex lg:w-auto lg:items-center mt-2 lg:mt-0">
+            <div class="lg:space-x-12 lg:flex-grow">
+                {{ range .Site.Menus.main }}
+                    <a class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="{{ .URL }}">
+                        {{ .Name }}
+                    </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', function(event) {
+            const isClickInsideMenu = menu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+            
+            if (!isClickInsideMenu && !isClickOnToggle && !menu.classList.contains('hidden')) {
+                menu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 1024) {
+                menu.classList.remove('hidden');
+                hamburgerIcon.classList.add('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                menu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+    });
+</script>
