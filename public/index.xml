@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>heissanjay</title>
-    <link>http://localhost/</link>
+    <link>https://heissanjay.gitlab.io/heissanjay/</link>
     <description>Recent content on heissanjay</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heissanjay.gitlab.io/heissanjay/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

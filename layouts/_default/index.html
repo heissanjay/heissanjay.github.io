@@ -1,5 +1,51 @@
 {{ define "main" }}
-  <section>
-    {{ .Content }}
-  </section>
+<main class="px-4 py-8">
+    {{ range first 3 (where .Site.RegularPages "Type" "article") }}
+        <a href="{{ .Permalink }}" class="text-left text-slate-200 text-xl prose-neutral prose-xl bg-white bg-opacity-5 rounded-md sm:flex max-w-prose mx-auto overflow-hidden shadow-lg mb-4 hover:shadow-xl transition duration-300">
+            <div class="sm:w-2/3">
+                <div class="px-6 py-4">
+                    <div class="text-xl mb-2">{{ .Title }}</div>
+                    <p class="text-gray-700 text-base">{{ .Date.Format "January 2, 2006" }}</p>
+                </div>
+            </div>
+        </a>
+    {{ end }}
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', function (event) {
+            const isClickInsideMenu = menu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && !menu.classList.contains('hidden')) {
+                menu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 1024) {
+                menu.classList.remove('hidden');
+                hamburgerIcon.classList.add('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                menu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+    });
+</script>
 {{ end }}

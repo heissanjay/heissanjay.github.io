@@ -1,4 +1,4 @@
-<nav class="text-xl fixed sticky top-0 m-12 p-4 max-lg:m-4">
+<nav class="text-xl fixed sticky top-0 z-10 rounded-xl m-12 p-4 max-lg:m-4">
     <div class="container mx-auto flex flex-wrap justify-between items-center">
         <div class="text-2xl font-bold">
             <a class="" href="{{ .Site.BaseURL }}">
@@ -18,7 +18,7 @@
         <div id="menu" class="hidden w-full lg:flex lg:w-auto lg:items-center mt-2 lg:mt-0">
             <div class="lg:space-x-12 lg:flex-grow">
                 {{ range .Site.Menus.main }}
-                    <a class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="{{ .URL }}">
+                    <a class="block text-slate-400 decoration-green-800 mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="{{ .URL }}">
                         {{ .Name }}
                     </a>
                 {{ end }}
@@ -26,42 +26,3 @@
         </div>
     </div>
 </nav>
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
-        
-        menuToggle.addEventListener('click', function() {
-            menu.classList.toggle('hidden');
-            hamburgerIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
-
-        document.addEventListener('click', function(event) {
-            const isClickInsideMenu = menu.contains(event.target);
-            const isClickOnToggle = menuToggle.contains(event.target);
-            
-            if (!isClickInsideMenu && !isClickOnToggle && !menu.classList.contains('hidden')) {
-                menu.classList.add('hidden');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth >= 1024) {
-                menu.classList.remove('hidden');
-                hamburgerIcon.classList.add('hidden');
-                closeIcon.classList.add('hidden');
-            } else {
-                menu.classList.add('hidden');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-        });
-    });
-</script>

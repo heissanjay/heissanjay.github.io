@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,16 +8,17 @@
   {{ $css := resources.Get "css/index.css" }}
   <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
 </head>
+
 <body>
   <div class="mx-auto">
     {{ partial "nav.html" . }}
-    {{ partial "banner.html" .}} 
+    {{ partial "banner.html" .}}
     {{ block "main" . }}
-    <!-- The part of the page that begins to differ between templates -->
     {{ end }}
-  {{ block "footer" . }}
-  {{ end }}
-</div>
+    {{ block "footer" . }}
+    {{ end }}
+  </div>
 
 </body>
+
 </html>
