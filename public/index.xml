@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>heissanjay</title>
-    <link>https://heissanjay.gitlab.io/</link>
+    <link>https://heissanjay.gitlab.io/heissanjay/</link>
     <description>Recent content on heissanjay</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 02 Jul 2024 23:32:03 +0530</lastBuildDate>
     
-	<atom:link href="https://heissanjay.gitlab.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://heissanjay.gitlab.io/heissanjay/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to setup single node Kubernetes cluster locally in WSL using Kubeadm ?</title>
-      <link>https://heissanjay.gitlab.io/posts/my-fourth-post/</link>
+      <link>https://heissanjay.gitlab.io/heissanjay/posts/my-fourth-post/</link>
       <pubDate>Tue, 02 Jul 2024 23:32:03 +0530</pubDate>
       
-      <guid>https://heissanjay.gitlab.io/posts/my-fourth-post/</guid>
+      <guid>https://heissanjay.gitlab.io/heissanjay/posts/my-fourth-post/</guid>
       <description>This is the content  Hello
  </description>
     </item>
     
     <item>
       <title>How Docker Works - Under the Hood ?</title>
-      <link>https://heissanjay.gitlab.io/posts/my-third-post/</link>
+      <link>https://heissanjay.gitlab.io/heissanjay/posts/my-third-post/</link>
       <pubDate>Tue, 02 Jul 2024 23:32:00 +0530</pubDate>
       
-      <guid>https://heissanjay.gitlab.io/posts/my-third-post/</guid>
+      <guid>https://heissanjay.gitlab.io/heissanjay/posts/my-third-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How I made my first open source contribution to Elasticsearch ?</title>
-      <link>https://heissanjay.gitlab.io/posts/my-second-post/</link>
+      <link>https://heissanjay.gitlab.io/heissanjay/posts/my-second-post/</link>
       <pubDate>Tue, 02 Jul 2024 23:31:58 +0530</pubDate>
       
-      <guid>https://heissanjay.gitlab.io/posts/my-second-post/</guid>
+      <guid>https://heissanjay.gitlab.io/heissanjay/posts/my-second-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testing the first post</title>
-      <link>https://heissanjay.gitlab.io/posts/my-first-post/</link>
+      <link>https://heissanjay.gitlab.io/heissanjay/posts/my-first-post/</link>
       <pubDate>Tue, 02 Jul 2024 23:31:56 +0530</pubDate>
       
-      <guid>https://heissanjay.gitlab.io/posts/my-first-post/</guid>
+      <guid>https://heissanjay.gitlab.io/heissanjay/posts/my-first-post/</guid>
       <description></description>
     </item>
     
