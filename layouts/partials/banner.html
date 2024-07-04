@@ -1,7 +1,8 @@
 <div class="mx-auto pt-16 text-xl items-center justify-center text-center max-w-3xl grid grid-cols-1 grid-rows-2 max-sm:block">
     <div class="flex mx-auto text-center items-center justify-center max-md:p-4">
         <div class="banner-arc bg-secondary-blue">
-            <img src="/pfp.jpg" alt="cool-cat-pfp" class="banner-pfp" />
+            {{ $pfp := resources.Get "pfp.jpg" }}
+            <img src="{{ $pfp.Permalink }}" alt="cool-cat-pfp" class="banner-pfp" />
         </div>
         <div class="ico-wrapper">
             {{ $telegram := resources.Get "icons/icons8-telegram-100.png" }}
