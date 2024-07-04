@@ -1,4 +1,4 @@
-baseURL: "https://heissanjay.gitlab.io/heissanjay"
+baseURL: "https://heissanjay.gitlab.io"
 title: "heissanjay"
 
 menu:
@@ -9,7 +9,7 @@ menu:
       weight: 1
     - identifier: "blog"
       name: "Blog"
-      url: "/blog"
+      url: "/posts"
       weight: 2
     - identifier: "about"
       name: "About"

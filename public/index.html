@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta name="generator" content="Hugo 0.68.3" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>heissanjay</title>
   
-  <link rel="stylesheet" type="text/css" href="https://heissanjay.gitlab.io/heissanjay/css/index.css" />
+  <link rel="stylesheet" type="text/css" href="https://heissanjay.gitlab.io/css/index.css" />
 </head>
+
 <body>
   <div class="mx-auto">
-    <nav class="text-xl fixed sticky top-0 m-12 p-4 max-lg:m-4">
+    <nav class="text-xl top-0 z-10 rounded-xl m-8 p-4 max-lg:m-4">
     <div class="container mx-auto flex flex-wrap justify-between items-center">
         <div class="text-2xl font-bold">
-            <a class="" href="https://heissanjay.gitlab.io/heissanjay">
+            <a class="" href="https://heissanjay.gitlab.io">
                 heissanjay
             </a>
         </div>
@@ -30,19 +32,19 @@
         <div id="menu" class="hidden w-full lg:flex lg:w-auto lg:items-center mt-2 lg:mt-0">
             <div class="lg:space-x-12 lg:flex-grow">
                 
-                    <a class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="/heissanjay/">
+                    <a class="block text-slate-400 decoration-green-800 mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="/">
                         Home
                     </a>
                 
-                    <a class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="/heissanjay/blog">
+                    <a class="block text-slate-400 decoration-green-800 mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="/posts">
                         Blog
                     </a>
                 
-                    <a class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="/heissanjay/about">
+                    <a class="block text-slate-400 decoration-green-800 mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="/about">
                         About
                     </a>
                 
-                    <a class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="/heissanjay/contact">
+                    <a class="block text-slate-400 decoration-green-800 mt-4 lg:inline-block lg:mt-0 hover:text-gray-300 mr-4" href="/contact">
                         Contact
                     </a>
                 
@@ -52,85 +54,48 @@
 </nav>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
-        
-        menuToggle.addEventListener('click', function() {
-            menu.classList.toggle('hidden');
-            hamburgerIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
-
-        document.addEventListener('click', function(event) {
-            const isClickInsideMenu = menu.contains(event.target);
-            const isClickOnToggle = menuToggle.contains(event.target);
-            
-            if (!isClickInsideMenu && !isClickOnToggle && !menu.classList.contains('hidden')) {
-                menu.classList.add('hidden');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth >= 1024) {
-                menu.classList.remove('hidden');
-                hamburgerIcon.classList.add('hidden');
-                closeIcon.classList.add('hidden');
-            } else {
-                menu.classList.add('hidden');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-        });
-    });
-</script>
-
-    <div class="mx-auto pt-16 text-xl items-center justify-center text-center max-w-3xl grid grid-cols-1 grid-rows-2 max-sm:block">
+    
+      <div class="mx-auto pt-16 text-xl items-center justify-center text-center max-w-3xl grid grid-cols-1 grid-rows-2 max-sm:block">
     <div class="flex mx-auto text-center items-center justify-center max-md:p-4">
         <div class="banner-arc bg-secondary-blue">
             
-            <img src="https://heissanjay.gitlab.io/heissanjay/pfp.jpg" alt="cool-cat-pfp" class="banner-pfp" />
+            <img src="https://heissanjay.gitlab.io/pfp.jpg" alt="cool-cat-pfp" class="banner-pfp" />
         </div>
         <div class="ico-wrapper">
             
             <div class="ico">
                 <a href="https://t.me/mrh3art">
-                    <img src="https://heissanjay.gitlab.io/heissanjay/icons/icons8-telegram-100.png" alt="telegram" />
+                    <img src="https://heissanjay.gitlab.io/icons/icons8-telegram-100.png" alt="telegram" />
                 </a>
             </div>
             
             <div class="ico">
                 <a href="https://github.com/heissanjay">
-                    <img src="https://heissanjay.gitlab.io/heissanjay/icons/icons8-github-100.png" alt="github" />
+                    <img src="https://heissanjay.gitlab.io/icons/icons8-github-100.png" alt="github" />
                 </a>
             </div>
             
             <div class="ico">
                 <a href="https://linkedin.com/in/heissanjay">
-                    <img src="https://heissanjay.gitlab.io/heissanjay/icons/icons8-linkedin-512.png" alt="linkedin" />
+                    <img src="https://heissanjay.gitlab.io/icons/icons8-linkedin-512.png" alt="linkedin" />
                 </a>
             </div>
             
             <div class="ico">
                 <a href="https://x.com/heissanjay">
-                    <img src="https://heissanjay.gitlab.io/heissanjay/icons/icons8-twitter-circled-612.png" alt="x.com / twitter" />
+                    <img src="https://heissanjay.gitlab.io/icons/icons8-twitter-circled-612.png" alt="x.com / twitter" />
                 </a>
             </div>
             
             <div class="ico">
                 <a href="https://leetcode.com/heissanjay">
-                    <img src="https://heissanjay.gitlab.io/heissanjay/icons/icons8-leetcode.png" alt="Leetcode" />
+                    <img src="https://heissanjay.gitlab.io/icons/icons8-leetcode.png" alt="Leetcode" />
                 </a>
             </div>
             
             <div class="ico">
                 <a href="https://gitlab.com/heissanjay">
-                    <img src="https://heissanjay.gitlab.io/heissanjay/icons/icons8-gitlab-100.png" alt="gitlab" />
+                    <img src="https://heissanjay.gitlab.io/icons/icons8-gitlab-100.png" alt="gitlab" />
                 </a>
             </div>
         </div>
@@ -146,15 +111,96 @@
         </p>
     </div>
 </div>
- 
-    
-  <section>
-    
-  </section>
 
-  
-  
-</div>
+    
+    
+    
+<main class="px-4 py-8">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-xl font-serif font-bold text-green-400 mb-6">Latest Articles</h2>
+        
+            <a href="https://heissanjay.gitlab.io/posts/my-fourth-post/" class="block mb-6 transition-all duration-300 ease-in-out transform hover:scale-105">
+                <div class="bg-gray-800 font-serif rounded-lg shadow-lg overflow-hidden border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">How to setup single node Kubernetes cluster locally in WSL using Kubeadm ?</h3>
+                        <p class="text-green-400 text-sm mb-3">July 2, 2024</p>
+                        
+                        
+                    </div>
+                </div>
+            </a>
+        
+            <a href="https://heissanjay.gitlab.io/posts/my-third-post/" class="block mb-6 transition-all duration-300 ease-in-out transform hover:scale-105">
+                <div class="bg-gray-800 font-serif rounded-lg shadow-lg overflow-hidden border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">How Docker Works - Under the Hood ?</h3>
+                        <p class="text-green-400 text-sm mb-3">July 2, 2024</p>
+                        
+                        
+                    </div>
+                </div>
+            </a>
+        
+            <a href="https://heissanjay.gitlab.io/posts/my-second-post/" class="block mb-6 transition-all duration-300 ease-in-out transform hover:scale-105">
+                <div class="bg-gray-800 font-serif rounded-lg shadow-lg overflow-hidden border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">How I made my first open source contribution to Elasticsearch ?</h3>
+                        <p class="text-green-400 text-sm mb-3">July 2, 2024</p>
+                        
+                        
+                    </div>
+                </div>
+            </a>
+        
+    </div>
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', function (event) {
+            const isClickInsideMenu = menu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && !menu.classList.contains('hidden')) {
+                menu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 1024) {
+                menu.classList.remove('hidden');
+                hamburgerIcon.classList.add('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                menu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+    });
+</script>
+
+    
+    
+<footer class="mx-auto text-center items-center font-xl text-slate-400  p-4">
+    <p> &#169; copyrights 2024 heissanjay; build with <a href="https://gohugo.io/" class="underline text-blue-300">Hugo</a></p>
+</footer>
+
+
+  </div>
 
 </body>
+
 </html>

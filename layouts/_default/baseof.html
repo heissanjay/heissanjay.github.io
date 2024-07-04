@@ -12,7 +12,9 @@
 <body>
   <div class="mx-auto">
     {{ partial "nav.html" . }}
-    {{ partial "banner.html" .}}
+    {{ if ne .Kind "page" }}
+      {{ partial "banner.html" . }}
+    {{ end }}
     {{ block "main" . }}
     {{ end }}
     {{ block "footer" . }}

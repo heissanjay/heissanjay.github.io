@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="px-4 py-8 max-w-prose mx-auto">
+    <article class="prose prose-slate">
+        <header class="mb-4">
+            <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+            <p class="text-gray-500">{{ .Date.Format "January 2, 2006" }}</p>
+        </header>
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </article>
+</main>
+{{ end }}
+

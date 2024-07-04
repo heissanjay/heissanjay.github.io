@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+  {{ $css := resources.Get "css/index.css" }}
+  <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
+</head>
+<body>
+  <div class="mx-auto">
+    {{ partial "nav.html" . }}
+    <main class="px-4 py-8">
+      <div class="max-w-3xl mx-auto">
+        {{ range  (where .Site.RegularPages "Type" "article") }}
+            <a href="{{ .Permalink }}" class="block mb-6 transition-all duration-300 ease-in-out transform hover:scale-105">
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">{{ .Title }}</h3>
+                        <p class="text-green-400 text-sm mb-3">{{ .Date.Format "January 2, 2006" }}</p>
+                        {{/*  <p class="text-gray-300 mb-4">{{ .Params.desc }}</p>  */}}
+                        <div class="flex items-center text-blue-400">
+                            Learn more
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {{ end }}
+    </div>
+    </main>
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>

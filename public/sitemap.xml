@@ -3,15 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://heissanjay.gitlab.io/heissanjay/categories/</loc>
+    <loc>https://heissanjay.gitlab.io/</loc>
+    <lastmod>2024-07-02T23:32:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://heissanjay.gitlab.io/heissanjay/</loc>
+    <loc>https://heissanjay.gitlab.io/posts/my-fourth-post/</loc>
+    <lastmod>2024-07-02T23:32:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://heissanjay.gitlab.io/heissanjay/tags/</loc>
+    <loc>https://heissanjay.gitlab.io/posts/</loc>
+    <lastmod>2024-07-02T23:32:03+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heissanjay.gitlab.io/posts/my-third-post/</loc>
+    <lastmod>2024-07-02T23:32:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heissanjay.gitlab.io/posts/my-second-post/</loc>
+    <lastmod>2024-07-02T23:31:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heissanjay.gitlab.io/posts/my-first-post/</loc>
+    <lastmod>2024-07-02T23:31:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heissanjay.gitlab.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://heissanjay.gitlab.io/tags/</loc>
   </url>
   
 </urlset>
