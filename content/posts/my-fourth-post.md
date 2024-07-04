@@ -8,3 +8,5 @@ Type: "article"
 #### This is the content
 
 > Hello
+
+![picture](/pfp.jpg)

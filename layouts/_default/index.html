@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ partial "banner.html" . }}
 <main class="px-4 py-8">
     <div class="max-w-3xl mx-auto">
         <h2 class="text-xl font-serif font-bold text-green-400 mb-6">Latest Articles</h2>
@@ -21,46 +22,4 @@
         {{ end }}
     </div>
 </main>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
-
-        menuToggle.addEventListener('click', function () {
-            menu.classList.toggle('hidden');
-            hamburgerIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
-
-        document.addEventListener('click', function (event) {
-            const isClickInsideMenu = menu.contains(event.target);
-            const isClickOnToggle = menuToggle.contains(event.target);
-
-            if (!isClickInsideMenu && !isClickOnToggle && !menu.classList.contains('hidden')) {
-                menu.classList.add('hidden');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-        });
-
-        window.addEventListener('resize', function () {
-            if (window.innerWidth >= 1024) {
-                menu.classList.remove('hidden');
-                hamburgerIcon.classList.add('hidden');
-                closeIcon.classList.add('hidden');
-            } else {
-                menu.classList.add('hidden');
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
-        });
-    });
-</script>
-{{ end }}
-{{define "footer" }}
-    
-{{partial "footer.html" .}}
-
 {{ end }}

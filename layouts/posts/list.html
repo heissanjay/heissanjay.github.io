@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
-  {{ $css := resources.Get "css/index.css" }}
-  <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
-</head>
-<body>
+{{define "main"}}
   <div class="mx-auto">
-    {{ partial "nav.html" . }}
     <main class="px-4 py-8">
       <div class="max-w-3xl mx-auto">
         {{ range  (where .Site.RegularPages "Type" "article") }}
@@ -31,7 +21,5 @@
         {{ end }}
     </div>
     </main>
-    {{ partial "footer.html" . }}
   </div>
-</body>
-</html>
+{{end }}

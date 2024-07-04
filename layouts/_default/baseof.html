@@ -12,15 +12,11 @@
 <body>
   <div class="mx-auto">
     {{ partial "nav.html" . }}
-    {{ if ne .Kind "page" }}
-      {{ partial "banner.html" . }}
-    {{ end }}
     {{ block "main" . }}
     {{ end }}
-    {{ block "footer" . }}
-    {{ end }}
+    {{partial "footer.html"}}
   </div>
-
+  {{ $js := resources.Get "js/main.js" }}
+  <script src="{{ $js.Permalink }}"></script>
 </body>
-
 </html>
