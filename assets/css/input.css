@@ -7,10 +7,12 @@
 
 body {
     /* font-family: "Mukta", sans-serif;*/
-    font-family: serif;
+    font-family:'Times New Roman', Times, serif;
     font-style: normal;
     color: #FFFFFF;
-    background-color: #020E26;
+    /* background-color: #020E26; */
+    background-color: #020918;
+
 }
 
 .banner-arc {
