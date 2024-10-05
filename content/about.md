@@ -6,8 +6,7 @@ hideDate: true
 
 ### Sanjay J [heissanjay]
 
-I appreciate your interest in knowing me! I'm Sanjay J, usually "heissanjay" on the internet. I'm a Software Engineer mostly focuses on things at 
-infrastructure and operations level who loves crafting optimal solutions.
+I appreciate your interest in knowing me! I'm Sanjay J, usually "heissanjay" on the internet. I'm a Software Engineer  who loves crafting optimal solutions and mostly focus on things at infrastructure and operations level .
 
 ### Skill Set
 
@@ -52,7 +51,7 @@ Here are languages and tools that I have worked with.
 
 ### Let's Connect
 
-I'm always open to new challenges and collaborations. Feel free to reach out!
+I'm always open to new challenges and collaborations. Feel free to reach out to me via any of the following contact methods.
 - [Telegram](https://t.me/mrh3art)
 - [Email](mailto:heissanjay@proton.me)
 - [LinkedIn](https://linkedin.com/in/heissanjay)

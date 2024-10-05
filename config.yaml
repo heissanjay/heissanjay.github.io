@@ -4,20 +4,20 @@ title: "heissanjay"
 menu:
   main:
     - identifier: "home"
-      name: "Home"
+      name: "home"
       url: "/"
       weight: 1
     - identifier: "blog"
-      name: "Blog"
+      name: "blogs"
       url: "/posts"
       weight: 2
     - identifier: "about"
-      name: "About"
+      name: "about"
       url: "/about"
       weight: 3
-    - identifier: "contact"
-      name: "Contact"
-      url: "/contact"
+    - identifier: "misc"
+      name: "misc"
+      url: "/misc"
       weight: 4
 
 params:
