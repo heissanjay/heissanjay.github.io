@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-02T23:32:03+05:30</lastmod>
+    <lastmod>2024-10-05T11:32:03+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/k8s-in-wsl/</loc>
-    <lastmod>2024-07-02T23:32:03+05:30</lastmod>
+    <lastmod>2024-10-05T11:32:03+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/oss-contribution-elasticsearch/</loc>
     <lastmod>2024-07-02T23:31:58+05:30</lastmod>

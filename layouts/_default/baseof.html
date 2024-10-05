@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ $css := resources.Get "css/index.css" }}
+    <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  {{ $css := resources.Get "css/index.css" }}
-  <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
-</head>
-
-<body>
-  <div class="mx-auto">
-    {{ partial "nav.html" . }}
-    {{ block "main" . }}
-    {{ end }}
-    {{partial "footer.html"}}
-  </div>
-  {{ $js := resources.Get "js/main.js" }}
-  <script src="{{ $js.Permalink }}"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</body>
+  <body>
+    <div class="mx-auto">
+      {{ partial "nav.html" . }} {{ block "main" . }} {{ end }} {{partial
+      "footer.html"}}
+    </div>
+    {{ $js := resources.Get "js/main.js" }}
+    <script src="{{ $js.Permalink }}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script
+      id="dsq-count-scr"
+      src="//heissanjay.disqus.com/count.js"
+      async
+    ></script>
+  </body>
 </html>

@@ -1,6 +1,8 @@
 baseURL: "https://heissanjay.github.io/"
 title: "heissanjay"
 
+disqusShortname: "heissanjay.disqus.com"
+
 menu:
   main:
     - identifier: "home"
