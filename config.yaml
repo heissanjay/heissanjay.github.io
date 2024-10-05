@@ -2,6 +2,11 @@ baseURL: "https://heissanjay.github.io/"
 title: "heissanjay"
 disqusShortname: "heissanjay.disqus.com"
 
+
+taxonomies:
+ tag: "tags"
+ category: "categories"
+
 menu:
   main:
     - identifier: "home"

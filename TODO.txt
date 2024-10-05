@@ -1,0 +1,1 @@
+- [] Make tags clickable and paginate it
