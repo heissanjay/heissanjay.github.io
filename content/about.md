@@ -6,7 +6,7 @@ hideDate: true
 
 ### Sanjay J [heissanjay]
 
-I appreciate your interest in knowing me! I'm Sanjay J, usually "heissanjay" on the internet. I'm a Software Engineer  who loves crafting optimal solutions and mostly focus on things at infrastructure and operations level .
+I appreciate your interest in knowing me! I'm Sanjay J, usually "heissanjay" on the internet. I'm a Software Engineer  who loves crafting optimal solutions and mostly focus on things at infrastructure and operations level.
 
 ### Skill Set
 
