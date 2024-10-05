@@ -1,4 +1,4 @@
-baseURL: "https://heissanjay.gitlab.io/heissanjay"
+baseURL: "https://heissanjay.github.io/"
 title: "heissanjay"
 
 menu:
@@ -24,6 +24,6 @@ params:
   bannerText:
     greetings: "Hey There👋, வணக்கம் (Vanakkam). "
     introduction: "This is Sanjay, mostly I prefer \"heissanjay\" as my username on the internet."
-    description: >  
-      I'm a CS Grad and a Software Engineer. I do coding stuff for fun, enjoy listening to music,
-      watching web series, and anime.
+    description: >
+      I'm a Software Engineer and I usually deal with things at the Infrastructure and Operation levels.
+      I'm currently working on <span class="underline">building Machine Learning pipelines in AWS SageMaker</span>.I'm interested in Machine Learning, NLP, Generative AI etc.

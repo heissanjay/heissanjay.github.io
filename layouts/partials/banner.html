@@ -1,4 +1,4 @@
-<div class="mx-auto pt-16 text-xl items-center justify-center text-center max-w-3xl grid grid-cols-1 grid-rows-2 max-sm:block">
+<div class="mx-auto  pt-16 text-xl items-center justify-center text-center max-w-3xl grid grid-cols-1 grid-rows-2 max-sm:block">
     <div class="flex mx-auto text-center items-center justify-center max-md:p-4">
         <div class="banner-arc bg-secondary-blue">
             {{ $pfp := resources.Get "pfp.jpg" }}
@@ -44,8 +44,8 @@
         </div>
     </div>
     
-    <div class="min-w-[100px] col-span-2 p-4 m-4 row-span-1 min-h-[100px] max-md:m-2">
-        <p class="text-left text-slate-200 font-light leading-12 prose-neutral prose-xl max-md:p-4 max-md:m-0">
+    <div class="min-w-[100px]  col-span-2  row-span-1 min-h-[100px] max-md:m-2">
+        <p class="text-left text-slate-200 font-light prose-neutral leading-12  prose-xl  max-md:m-0">
             {{ with .Site.Params.bannerText }}
             {{ .greetings | safeHTML }} <br>
             {{ .introduction | safeHTML }} <br>

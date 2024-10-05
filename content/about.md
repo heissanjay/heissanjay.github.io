@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "About Me"
 draft: false
 hideDate: true
 ---
@@ -14,7 +14,7 @@ infrastructure and operations level who loves crafting optimal solutions.
 Here are languages and tools that I have worked with.
 
 - C/C++, Python, Golang, Java 
-- Javascript / Typescript, React, TailwindCSS
+- Javascript / Typescript, ReactJS, VueJS, TailwindCSS
 - Git/GitHub, Gitlab, VS Code
 - SQL, PostgreSQL, MongoDB, Firebase
 - Docker, Kubernetes, Helm, Linux, EKS, Gitlab CI/CD, Terraform, Karpenter
