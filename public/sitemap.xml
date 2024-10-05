@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1909/</loc>
     <lastmod>2024-10-05T11:32:03+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/k8s-in-wsl/</loc>
+    <loc>http://localhost:1909/posts/k8s-in-wsl/</loc>
     <lastmod>2024-10-05T11:32:03+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/oss-contribution-elasticsearch/</loc>
+    <loc>http://localhost:1909/posts/oss-contribution-elasticsearch/</loc>
     <lastmod>2024-07-02T23:31:58+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1909/posts/</loc>
     <lastmod>2024-07-02T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1909/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1909/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/misc/</loc>
+    <loc>http://localhost:1909/misc/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1909/tags/</loc>
   </url>
 </urlset>
