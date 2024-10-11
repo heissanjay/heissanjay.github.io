@@ -1,8 +1,8 @@
 {{ define "main" }}
-<main class="px-4 py-8  w-1/2 mx-auto max-lg:w-fit">
-    <article class="prose prose-neutral mb-36 max-md:mb-24 max-md:text-[16px]   prose-xl dark:prose-invert">
+<main class="px-4 w-1/2 mx-auto mb-0 py-8  max-lg:w-fit">
+    <article class="prose prose-neutral mb-36 max-md:mb-24   prose-xl dark:prose-invert">
         <header class="mb-4">
-            <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+            <h1 class="text-3xl font-bold max-md:text-[16px]">{{ .Title }}</h1>
             {{/* <p>{{ .Date.Format "January 2, 2006" }}</p> */}}
             {{ if and (.Date) (not .Params.hideDate) }}
             <p class="text-gray-500" datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
@@ -18,12 +18,10 @@
                 {{ end }}
             </p>
             {{ end }}
-
         </header>
         <div class="max-md:text-[16px]">
             {{ .Content }}
         </div>
     </article>
-    {{ partial "disqus.html"}}
 </main>
 {{ end }}

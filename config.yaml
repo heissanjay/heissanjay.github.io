@@ -22,8 +22,8 @@ menu:
       url: "/about"
       weight: 3
     - identifier: "misc"
-      name: "Misc"
-      url: "/misc"
+      name: "Random"
+      url: "/random"
       weight: 4
 
 params:

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on heissanjay</title>
-    <link>http://localhost:2256/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on heissanjay</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 05 Oct 2024 11:32:03 +0530</lastBuildDate>
-    <atom:link href="http://localhost:2256/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to setup single node Kubernetes cluster locally in WSL using Kubeadm ?</title>
-      <link>http://localhost:2256/posts/k8s-in-wsl/</link>
+      <link>http://localhost:1313/posts/k8s-in-wsl/</link>
       <pubDate>Sat, 05 Oct 2024 11:32:03 +0530</pubDate>
-      <guid>http://localhost:2256/posts/k8s-in-wsl/</guid>
+      <guid>http://localhost:1313/posts/k8s-in-wsl/</guid>
       <description>&lt;h4 id=&#34;wait&#34;&gt;Wait&lt;/h4&gt;&#xA;&lt;p&gt;Writring is in Progress&lt;/p&gt;&#xA;&lt;p&gt;you may ask why you published then? &amp;ldquo;just for testing purpose&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}&#xA;$$&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I made my first open source contribution to Elasticsearch ?</title>
-      <link>http://localhost:2256/posts/oss-contribution-elasticsearch/</link>
+      <link>http://localhost:1313/posts/oss-contribution-elasticsearch/</link>
       <pubDate>Tue, 02 Jul 2024 23:31:58 +0530</pubDate>
-      <guid>http://localhost:2256/posts/oss-contribution-elasticsearch/</guid>
+      <guid>http://localhost:1313/posts/oss-contribution-elasticsearch/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ll populate this soon.&lt;/p&gt;</description>
     </item>
   </channel>
