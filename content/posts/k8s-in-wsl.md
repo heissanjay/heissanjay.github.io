@@ -6,13 +6,5 @@ Type: "article"
 tags: ["devops", "kubernetes", "linux"]
 ---
 
-#### Wait
-
-Writring is in Progress
-
-you may ask why you published then? "just for testing purpose"
-
-$$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-$$
+test
 
